@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+  
+
+.Container { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .Picture {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 5px solid #fff;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -50%);
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .Picture-img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    pointer-events: none;
+  }
+  
+  .Picture-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 70px;
+    padding: 12px 24px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Jua', sans-serif;
+  }
+  
+  .Network {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  
+  .Network img {
+    width: 1.5rem;
+    aspect-ratio: 1 / 1;
+    vertical-align: middle;
+  }
+  
+  /* --------------------- */
+  /* Other styles          */
+  /* --------------------- */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+
+
+  .special-time-page {
+      position: relative;
+      /* 상대적 위치 지정 */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 가로 중심 정렬 */
+      justify-content: center;
+      /* 세로 중심 정렬 */
+     
+  }
+
+  .sp{
+    position: relative;
+    top: 16px;
+  }
+  
+  .special-time-page .spheader {
+    position: absolute; /* 겹치도록 설정 */
+    top: 0; /* SpecialTime과 시작 위치를 맞추기 */
+    left: 0;
+    width: 100%; /* 화면 전체 너비 */
+    z-index: 1; /* SpecialTime보다 뒤로 배치되도록 설정 */
+  }
+    
+  .special-time-page .special-time {
+    position: relative; /* 기본 위치 */
+    z-index: 2; /* header 위에 나타나도록 설정 */
+  }
+
+  .SpecialContainer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+  
+/* 여기에 새로운 클래스와 애니메이션을 추가합니다. */
+.special-time {
+    font-family: 'Bangers', cursive;
+    font-size: 10px;
+    color: #FFF;
+    text-shadow: 0 1px 0 #CCC,
+        0 2px 0 #CCC,
+        0 3px 0 #CCC,
+        0 4px 0 #CCC,
+        0 5px 0 #CCC,
+        0 6px 0 transparent,
+        0 7px 0 transparent,
+        0 8px 0 transparent,
+        0 9px 0 transparent,
+        0 10px 10px rgba(0, 0, 0, .4);
+    animation: bounce .5s ease infinite alternate;
+    cursor: pointer;
+}
+
+.menu-items {
+    font-family: 'Noto Sans KR', sans-serif; /* Noto Sans KR 폰트 적용 */
+    font-size: 16px;
+    color: #FFF;
+}
+
+/* 나머지 CSS 코드는 그대로 두세요 */
+
+
+h1 {
+    height: 100px;
+    
+}
+
+h1 span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce .3s ease infinite alternate;
+    font-family: 'Bangers', cursive;
+    /* 변경된 폰트 적용 */
+    font-size: 80px;
+    color: #FFF;
+    text-shadow: 0 1px 0 #CCC,
+        0 2px 0 #CCC,
+        0 3px 0 #CCC,
+        0 4px 0 #CCC,
+        0 5px 0 #CCC,
+        0 6px 0 transparent,
+        0 7px 0 transparent,
+        0 8px 0 transparent,
+        0 9px 0 transparent,
+        0 10px 10px rgba(0, 0, 0, .4);
+}
+
+h1 span:nth-child(2) {
+    animation-delay: .1s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: .2s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: .4s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: .5s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: .6s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: .7s;
+}
+h1 span:nth-child(9){
+    animation-delay: .8s;
+}
+h1 span:nth-child(10) { /* m */
+    animation-delay: .9s; /* Match with e */
+}
+h1 span:nth-child(11) { /* e */
+    animation-delay: .10s; /* Match with c */
+}
+
+
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #CCC,
+            0 2px 0 #CCC,
+            0 3px 0 #CCC,
+            0 4px 0 #CCC,
+            0 5px 0 #CCC,
+            0 6px 0 #CCC,
+            0 7px 0 #CCC,
+            0 8px 0 #CCC,
+            0 9px 0 #CCC,
+            0 50px 25px rgba(0, 0, 0, .2);
+    }
+}
